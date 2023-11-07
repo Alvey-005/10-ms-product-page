@@ -1,4 +1,4 @@
-import {  createBrowserRouter,LoaderFunction } from "react-router-dom";
+import {  createBrowserRouter } from "react-router-dom";
 import ProductDetails ,{Productloader}from "../pages/ProductDetails";
 
 const router = createBrowserRouter([

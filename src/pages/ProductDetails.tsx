@@ -59,7 +59,7 @@ const ProductDetails = () => {
                     <div className='mb-8'>
                         <Heading>{pointer.name}</Heading>
                         <div className={`grid justify-items-start grid-cols-1 lg:grid-cols-2 gap-4 w-full md:rounded-md md:border p-5  border-neutral-200`}>
-                            {pointer.values.map((point: any, idx: number) => (
+                            {pointer.values.map((point: any) => (
                                 <li>{parse(point.text)}</li>
                             ))}
 
@@ -174,7 +174,7 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <div className="grid py-2 md:p-6">
-                            {data.checklist.map((item: any, idx: number) => (
+                            {data.checklist.map((item: any) => (
                                 <div className="mb-3 flex items-center leading-5">
                                     <div className="inline-block h-[20px] w-[20px]" >
                                         <img alt="icon" src={item.icon} style={{ opacity: 1 }} /></div>
