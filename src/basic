@@ -1,0 +1,87 @@
+    <>
+      <main className="container flex flex-col gap-4 md:flex-row md:gap-12 md:pt-10">
+        <div className='order-2 flex-1 md:order-1  md:max-w-[calc(100%_-_348px)] lg:max-w-[calc(100%_-_448px)]'>
+          <h1 className='text-gray-950 mb-8 leading-normal text-4xl font-semibold text-left hidden md:block'>IELTS Course by Munzereen Shahid</h1>
+          <p className='text-gray-700 text-left leading-normal mb-4'>Academic IELTS এবং General Training IELTS- এর কমপ্লিট প্রিপারেশন নিতে পারবেন একটি কোর্সেই! IELTS Course-টিতে এনরোল করলে ভিডিও, লেকচার শিট, IELTS Reading এবং Listening Mock Tests, Doubt Solving Live Classes-এর পাশাপাশি মুনজেরিন শহীদের “ঘরে বসে IELTS প্রস্তুতি” বইটি পাচ্ছেন একদম ফ্রিতে! সুতরাং, IELTS পরীক্ষার জন্য সেরা প্রস্তুতি নিতে এবং কাঙ্ক্ষিত ব্যান্ড স্কোরটি অর্জন করতে আজই এনরোল করুন আমাদের IELTS Course-এ।</p>
+
+          {/* course Instructor */}
+          <div className='mb-8'>
+            <Heading>Course instructors</Heading>
+            <div className='grid justify-items-center grid-cols-1 md:grid-cols-2 gap-4 w-full md:rounded-md md:border p-5  border-neutral-200 text-left'>
+            <div className='flex gap-5 items-center'>
+              {/* <div className=''>Profile picture</div> */}
+              <img className="inline-block h-20 w-20 rounded-full ring-2 ring-white" src="https://cdn.10minuteschool.com/images/skills/lp/ms_onset.jpg" alt="" />
+              <div>
+                <h6 className='font-medium'>Munzereen Shahid</h6>
+                <span className="" >{parse(text)}</span>
+
+              </div>
+
+
+            </div>
+            <div className='flex gap-5 items-center'>
+              {/* <div className=''>Profile picture</div> */}
+              <img className="inline-block h-20 w-20 rounded-full ring-2 ring-white" src="https://cdn.10minuteschool.com/images/skills/lp/ms_onset.jpg" alt="" />
+              <div>
+                <h6 className='font-medium'>Munzereen Shahid</h6>
+                <span className="" >{parse(text)}</span>
+
+              </div>
+
+
+            </div>
+            <div className='flex gap-5 items-center'>
+              {/* <div className=''>Profile picture</div> */}
+              <img className="inline-block h-20 w-20 rounded-full ring-2 ring-white" src="https://cdn.10minuteschool.com/images/skills/lp/ms_onset.jpg" alt="" />
+              <div>
+                <h6 className='font-medium'>Munzereen Shahid</h6>
+                <span className="" >{parse(text)}</span>
+
+              </div>
+
+
+            </div>
+            </div>
+          </div>
+          
+          {/* course Instructor end*/}
+          {/* course laid out feature */}
+          <div className='mb-4'>
+            <Heading>Course laid out</Heading>
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 bg-violet-900  md:rounded-md md:border p-5">
+              {features.values.map((feature, idx) => (
+                <div key={idx} className='flex gap-4 items-start'>
+                <img src={feature.icon}/>
+                <div className='flex flex-1 flex-col gap-2'>
+                  <h5 className='font-semibold text-white'>{feature.title}</h5>
+                  <h6 className='text-white'>{feature.subtitle}</h6>
+                </div>
+              </div>
+              ))}
+              
+              
+            </div>
+          </div>
+          {/* course laid out feature end */}
+          {/* course about */}
+          {/* <MainAcc/> */}
+          <div className='text-left'>
+          
+          </div>
+          
+          {/* <Accordion /> */}
+          {/* <AccordianHolder itemArray={about.values}/> */}
+          <AccordianHolder itemArray={transformedObject}/>
+          <div className='grid grid-cols-1  gap-8 mb-4 p-4 md:rounded-md md:border'>
+          <CheckList title={checkList1.title} image={checkList1.file_url} checklistArray={checkList1.checklist}/>
+          <span className="w-full p-[.1px] bg-slate-400"></span>
+          <CheckList title={checkList1.title} image={checkList1.file_url} checklistArray={checkList1.checklist}/>
+             </div>
+          {/* course about end */}
+          {/* course End */}
+          {/* course End */}
+        </div>
+
+        <div className='w-full order-1  md:max-w-[330px] lg:max-w-[400px] bg-blue-100'>Hello</div>
+      </main>
+    </>
