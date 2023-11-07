@@ -116,7 +116,7 @@ const ProductDetails = () => {
                     )}
 
                     <div className='mb-8'>
-                        {testimonials && testimonials.values &&
+                        {testimonials && testimonials.values && testimonials.values.length>0 &&
 
                             (
                                 <><Heading>{testimonials.name}</Heading>
